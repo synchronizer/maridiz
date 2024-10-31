@@ -2,6 +2,7 @@
 // Проверяем, была ли отправлена форма
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["TYPE"] == "feedback") {
     // Получаем данные из формы
+    $title = $_POST["TITLE"]; 
     $name = $_POST["NAME"];
     $phone = $_POST["PHONE"];
     $page = $_POST["PAGE"];
@@ -14,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["TYPE"] == "feedback") {
     // Формируем параметры для создания лида в переменной $queryData
     $queryData = [
         'fields' => [
-            'TITLE' => 'Заявка на звонок',
+            'TITLE' => $title,
             'NAME' => $name,
             'SOURCE_ID' => 'WEB',
             'PHONE' => [['VALUE' => $phone, 'VALUE_TYPE' => 'WORK']],
@@ -58,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["TYPE"] == "feedback") {
     // Tg Send
 
     $token = "1361280197:AAE27RG92C3E8HhC4Yc0-_MHXEpxGWwnKZA";
-    $text = "<b>$name</b>\n$phone\n$comment";
+    $text = "<b>$title</b>\n$name\n$phone\n$comment";
     $getQuery = array(
         "chat_id" 	=> "-4143263217",
         "text"  	=> $text,

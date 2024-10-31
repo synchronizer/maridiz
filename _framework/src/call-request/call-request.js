@@ -1,6 +1,7 @@
 
 Array.from(document.querySelectorAll('.call-request')).forEach(item => {
-    const name = item.querySelector('[name="name"]'),
+    const title = item.querySelector('.call-request__title'),
+        name = item.querySelector('[name="name"]'),
         phone = item.querySelector('[name="phone"]'),
         send = item.querySelector('[name="send"]'),
         email = item.querySelector('[name="email"]'),
@@ -26,6 +27,7 @@ Array.from(document.querySelectorAll('.call-request')).forEach(item => {
     send.onclick = () => {
         const form = new FormData();
         form.append('TYPE', 'feedback');
+        if (title) form.append('TITLE', title.textContent);
         if (name) form.append('NAME', name.value);
         if (phone) form.append('PHONE', phone.value);
         if (email) form.append('EMAIL', email.value);

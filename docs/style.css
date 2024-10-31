@@ -1359,6 +1359,9 @@
     color: #fff;
 }
 
+.modal[data-modal-hidden] {
+    display: none;
+}
 * {
   box-sizing: border-box;
   margin: 0;

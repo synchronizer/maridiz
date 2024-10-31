@@ -50,3 +50,7 @@
     right: 0.75rem;
     color: #fff;
 }
+
+.modal[data-modal-hidden] {
+    display: none;
+}

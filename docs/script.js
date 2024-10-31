@@ -41,7 +41,8 @@ Array.from(document.querySelectorAll('.notifications__item')).forEach(notificati
 
 
 Array.from(document.querySelectorAll('.call-request')).forEach(item => {
-    const name = item.querySelector('[name="name"]'),
+    const title = item.querySelector('.call-request__title'),
+        name = item.querySelector('[name="name"]'),
         phone = item.querySelector('[name="phone"]'),
         send = item.querySelector('[name="send"]'),
         email = item.querySelector('[name="email"]'),
@@ -67,6 +68,7 @@ Array.from(document.querySelectorAll('.call-request')).forEach(item => {
     send.onclick = () => {
         const form = new FormData();
         form.append('TYPE', 'feedback');
+        if (title) form.append('TITLE', title.textContent);
         if (name) form.append('NAME', name.value);
         if (phone) form.append('PHONE', phone.value);
         if (email) form.append('EMAIL', email.value);
@@ -899,22 +901,7 @@ Array.from(document.querySelectorAll('.image-slider')).forEach(imageSlider => {
 })
 const showModal = modalId => {
     const modal = document.querySelector(`#${modalId}`);
-    if (!modal) {
-        console.warn(`No modal with id="#${modalId}"`);
-        return
-    }
-    modal.previous = document.querySelector('.modal[open]');
-    if (modal.previous) modal.previous.close();
     modal.showModal();
-}
-
-const closeModal = modalElement => {
-    modalElement.close();
-    if (!modalElement.previous) return;
-
-    modalElement.previous.showModal();
-
-    modalElement.previous = null;
 }
 
 Array.from(document.querySelectorAll('[data-modal]')).forEach(modalTrigger => {
@@ -922,12 +909,13 @@ Array.from(document.querySelectorAll('[data-modal]')).forEach(modalTrigger => {
 })
 
 Array.from(document.querySelectorAll('.modal')).forEach(modal => {
-    const   modal__close = modal.querySelector('.modal__close'),
-            modal__scroller = modal.querySelector('.modal__scroller'),
-            modal__content = modal.querySelector('.modal__content');
+    const modal__close = modal.querySelector('.modal__close'),
+        modal__scroller = modal.querySelector('.modal__scroller'),
+        modal__content = modal.querySelector('.modal__content');
 
-    modal__close.addEventListener('click', () => { closeModal(modal) })
-    modal__scroller.addEventListener('click', () => { closeModal(modal) })
+
+    modal__close.addEventListener('click', () => { modal.close() })
+    modal__scroller.addEventListener('click', () => { modal.close() })
 
     modal__content.addEventListener('click', e => {
         e.stopPropagation();
