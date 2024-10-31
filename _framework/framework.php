@@ -2,14 +2,14 @@
 <?php 
 
 function create_block($block_name, $block_function) {
-    global $blocksArray;
-    $blocksArray[$block_name] = $block_function;
+    global $blocks;
+    $blocks[$block_name] = $block_function;
 }
 
 function render($source = 'index.html') {
 
     $source = $_SERVER['DOCUMENT_ROOT'] .$_SERVER['REQUEST_URI'] . '/' . $source;
-    global $blocksArray;
+    global $blocks;
     global $settings;
     $settings = json_decode(file_get_contents("$_SERVER[DOCUMENT_ROOT]/_framework/settings.json"), true);
     $html = file_get_contents($source);
@@ -67,7 +67,7 @@ function render($source = 'index.html') {
     $html = preg_replace("%\<[^ \>]*\K\s+|\G(?!\A)[^ \>]*\K\s+ %i", ' ', $html);
 
     
-    foreach ($blocksArray as $key => $value) {
+    foreach ($blocks as $key => $value) {
         $uppercase_block_name =  ucfirst($key);
         $html = str_replace("<$uppercase_block_name", "[[$uppercase_block_name", $html);
         $html = str_replace("</$uppercase_block_name", "[[/$uppercase_block_name", $html);
@@ -104,14 +104,14 @@ function render($source = 'index.html') {
 
         $rightPart = substr(strstr($html, "[[/$blockName" . ">"), strlen($blockName) + 4);
 
-        if ($blocksArray && array_key_exists(lcfirst($blockName), $blocksArray)) {
-            $result = $blocksArray[lcfirst($blockName)]($content, $newAtts);
+        if ($blocks && array_key_exists(lcfirst($blockName), $blocks)) {
+            $result = $blocks[lcfirst($blockName)]($content, $newAtts);
         } else {
             $result = $content;
         }
         $html = $leftPart . $result . $rightPart;
         
-        foreach ($blocksArray as $key => $value) {
+        foreach ($blocks as $key => $value) {
             $uppercase_block_name =  ucfirst($key);
             $html = str_replace("<$uppercase_block_name", "[[$uppercase_block_name", $html);
             $html = str_replace("</$uppercase_block_name", "[[/$uppercase_block_name", $html);
@@ -141,7 +141,7 @@ function render($source = 'index.html') {
     $html = preg_replace("%\<[^ \>]*\K\s+|\G(?!\A)[^ \>]*\K\s+ %i", ' ', $html);
 
     
-    foreach ($blocksArray as $key => $value) {
+    foreach ($blocks as $key => $value) {
         $uppercase_block_name =  ucfirst($key);
         $html = str_replace("<$uppercase_block_name", "[[$uppercase_block_name", $html);
         $html = str_replace("</$uppercase_block_name", "[[/$uppercase_block_name", $html);
@@ -178,8 +178,8 @@ function render($source = 'index.html') {
 
         $rightPart = substr(strstr($html, "[[/$blockName" . ">"), strlen($blockName) + 4);
 
-        if ($blocksArray && array_key_exists(lcfirst($blockName), $blocksArray)) {
-            $result = $blocksArray[lcfirst($blockName)]($content, $newAtts);
+        if ($blocks && array_key_exists(lcfirst($blockName), $blocks)) {
+            $result = $blocks[lcfirst($blockName)]($content, $newAtts);
         } else {
             $result = $content;
         }
@@ -192,7 +192,7 @@ function render($source = 'index.html') {
         
         
         
-        foreach ($blocksArray as $key => $value) {
+        foreach ($blocks as $key => $value) {
             $uppercase_block_name =  ucfirst($key);
             $html = str_replace("<$uppercase_block_name", "[[$uppercase_block_name", $html);
             $html = str_replace("</$uppercase_block_name", "[[/$uppercase_block_name", $html);
