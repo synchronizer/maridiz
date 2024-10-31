@@ -1,12 +1,5 @@
 <?php
-    // echo implode('<br>', array_keys($_SERVER));
-    // foreach($_SERVER as $key => $value) {
-    //     echo "$key: $value<br>";
-    // };
-    $array = explode('/', $_SERVER['DOCUMENT_ROOT']);
-    array_pop($array);
-    $array = implode('/', $array);
-    file_put_contents('../1_test_file.txt', 'TEST_FILE');
+    // file_put_contents('../1_test_file.txt', 'TEST_FILE');
     echo "<code>BUILD</code>";
     $search_path = $_SERVER['DOCUMENT_ROOT'];
     while (count(glob("$search_path")) > 0) { 
