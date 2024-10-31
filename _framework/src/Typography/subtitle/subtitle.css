@@ -1,0 +1,26 @@
+.subtitle {
+    margin-top: calc(var(--line-height-text) * 1.5);
+    margin-bottom: calc(var(--line-height-text) * .5);
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-subtitle);
+    line-height: var(--line-height-subtitle);
+    font-weight: var(--font-weight-subtitle);
+    text-wrap: balance;
+    /* display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem; */
+    margin-inline: var(--margin-inline-text);
+}
+
+.subtitle:first-child {
+    margin-top: 0;
+}
+
+.subtitle:last-child {
+    margin-bottom: 0;
+}
+
+.subtitle_center {
+    text-align: center;
+}
+

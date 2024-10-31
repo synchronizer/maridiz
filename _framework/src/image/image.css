@@ -1,0 +1,27 @@
+
+.image__img {
+  display: block;
+  object-fit: cover;
+}
+
+
+.image__img:not([width]) {
+  max-width: 100%;
+}
+
+.image__caption {
+  margin-top: 0em;
+  /* color: var(--grey-S); */
+  font-size: var(--font-size-caption);
+}
+
+.image__preview {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 
+.image_rounded .image__img{
+  border-radius: var(--bd-radius-M);
+} */

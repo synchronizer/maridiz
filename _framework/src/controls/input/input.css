@@ -1,0 +1,38 @@
+
+.input {
+  position: relative;
+}
+
+.input__input {
+  height: var(--control-size-L);
+  border: 1px solid var(--grey-border);
+  box-sizing: border-box;
+  padding: 1em calc(var(--control-size-L) * .2) 0;
+  font: var(--font-text);
+  font-weight: 400;
+  width: 100%;
+  background-color: var(--input-bg);
+}
+
+.input__label {
+  position: absolute;
+  left: calc(var(--control-size-L) * .2);
+  top: .1em;
+  font-size: .8rem;
+  /* opacity: 0.5; */
+}
+
+.input__clear {
+  position: absolute;
+  right: .25em;
+  top: .25em;
+}
+
+.input__input:placeholder-shown~.input__clear,
+.input:has(.input__input[disabled]) .input__clear {
+  display: none;
+}
+
+.input:has(.input__input[disabled]) {
+  opacity: .5;
+}

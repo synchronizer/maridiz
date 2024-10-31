@@ -1,0 +1,7 @@
+.main {
+  width: min(
+    var(--content-width-m),
+    calc(100% - (var(--page-padding-inline) * 2))
+  );
+  margin-inline: auto;
+}

@@ -1,0 +1,5 @@
+{
+    "src": "/_framework/src",
+    "build": "/docs",
+    "public_url": "https://synchronizer.github.io/maridiz_prod"
+}

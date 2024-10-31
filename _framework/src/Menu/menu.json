@@ -1,0 +1,29 @@
+{
+    "Услуги": {
+        "href" : "/services/",
+        "submenu": {
+            "Проектирование": {"href" : "/project-summery-cafe/"},
+            "Согласование": {"href" : "/soglasovanie-letnego-cafe/"},
+            "Фотомонтаж": {"href" : "/photomontage/"},
+            "Демонтаж и хранение": {"href" : "/demontazh-letnih-cafe/"},
+            "Строительство под ключ": {"href" : "/realizaciya/"},
+            "Дизайн интерьера": {"href" : "/interior-design/"},
+            "Алкогольная лицензия": {"href" : "/roznichnaya-licenziya-dlya-prodazhi-alcoholnoy-produkcii/"}
+         }
+    },
+    "Информация": {
+        "href" : "/blog/",
+        "submenu": {
+            "В какой компании регистрировать": {"href" : "/kak-vybrat-kompaniyu-po-registraczii-letnego-kafe/"},
+            "Размещение по 102-ПП": {"href" : "/location-summery-cafe/"},
+            "Штрафы и ответственность": {"href" : "/shtraf-i-otvetstvennost-letnee-kafe-bez-razresheniya/"},
+            "Компактное летнее кафе": {"href" : "/compact-cafe/"},
+            "Архитектурно художественное решение": {"href" : "/architecturno-hudozhestvennoe-reshenie/"},
+            "Зимние веранды": {"href" : "/zimnie-verandy/"}
+         }
+    },
+    "Перголы": {"href" : "/kalkulyator-pergol/"},
+    "О компании": {"href" : "/about/"},
+    "Отзывы": {"href" : "/otzyvy/"},
+    "Контакты": {"href" : "/contacts/"}
+}

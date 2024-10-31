@@ -1,0 +1,64 @@
+
+.example {
+    padding: 2em;
+    border: 1px dashed var(--grey-border);
+    resize: horizontal;
+    overflow: auto;
+    position: relative;
+    border-radius: var(--bd-radius-M);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  
+  .example_fullwidth {
+    margin: 0;
+    padding: 0 2em 2em;
+    resize: none;
+    overflow: visible;
+  }
+  
+  
+  .example__code-src {
+    color: var(--code-color);
+    font-weight: 400;
+    display: block;
+  }
+  
+  .example__copycode {
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+    color: var(--grey-text);
+  }
+  
+  .example:not(:hover) .example__copycode {
+    display: none;
+  }
+
+.example__html-src {
+  line-height: 1.75;
+  border: 1px solid currentColor;
+  padding: .75rem .75rem 3rem;
+  border-radius: var(--bd-radius-S);
+  resize: vertical;
+  height: 30vh;
+  width: 100%;
+  font-family: monospace;
+  font-size: .9rem;
+  background-color: var(--input-bg);
+  color: currentColor;
+}
+
+.example__html {
+  position: relative;
+}
+
+.example__html-buttons {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  display: flex;
+  gap: .5rem;
+}

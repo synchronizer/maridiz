@@ -1,0 +1,88 @@
+:root {
+    --page-bg: light-dark(#fff, hsl(0deg 0% 7%));
+    --grey-bg: light-dark(hsl(240deg 15% 94%), hsl(240deg 8% 18%));
+    --black-bg: hsl(0deg 0% 14%);
+    --button-bg: hsla(240, 13%, 60%, 0.3);
+    --button_appearance_dark-bg: hsla(0, 0%, 0%, 0.75);
+    --input-bg: hsl(240deg 13% 100% / 0.25);
+    /* --button-label-color: light-dark(#000, #fff); */
+    --light-text-color: hsl(240deg 5% 40% / 80%);
+    --border-color: hsl(240deg 5% 50% / 70%);
+
+    --grey-text: hsl(0deg 0% 52% / 90%);
+    --grey-border: rgba(139, 139, 153, .7);
+
+    --backdrop: #0009;
+
+    --color-link: light-dark(hsl(220deg 100% 50%), hsl(220deg 100% 75%));
+    --color-link-visited: light-dark(hsl(270deg 100% 50%), hsl(270deg 100% 75%));
+
+    --code-color: #F60;
+
+
+
+    --attractive-bg: linear-gradient(to right top, hsl(140deg 100% 55%) 0%, hsl(180deg 100% 55%) 100%);
+
+    --animation-duration: .5s;
+    --animation-duration-m: .5s;
+    --animation-duration-s: .3s;
+
+    --animation-timing-function: cubic-bezier(0.090, 0.615, 0.405, 0.980);
+
+
+
+    --control-size-XS: 1.75rem;
+    --control-size-S: 1.8rem;
+    --control-size-M: 2.6rem;
+    --control-size-L: 3.4rem;
+
+    --bd-radius-L: 1.2rem;
+    --bd-radius-M: .7rem;
+    --bd-radius-S: .35rem;
+    --shadow: 0 1.5rem 1.5rem -.75rem #0A002688;
+
+
+    --font-family: -apple-system, system-ui, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    ;
+    --font-family-title: -apple-system, system-ui, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    ;
+
+    --font-size-supertitle: 3rem;
+    --font-size-title: 2rem;
+    --font-size-subtitle: 1.2rem;
+    --font-size-text: 1rem;
+    --font-size-lead: 1.6rem;
+    --font-size-caption: .8rem;
+    --font-size-button: .9rem;
+
+    --font-weight-supertitle: 700;
+    --font-weight-title: 700;
+    --font-weight-subtitle: 700;
+    --font-weight-text: 400;
+    --font-weight-lead: 400;
+    --font-weight-caption: 400;
+    --font-weight-button: 500;
+
+    --line-height-supertitle: 3.3rem;
+    --line-height-title: 2.4rem;
+    --line-height-subtitle: 1.68rem;
+    --line-height-text: 1.6rem;
+    --line-height-lead: 2.4rem;
+    --line-height-text-narrow: 1.4rem;
+    --line-height-caption: 1.5rem;
+
+    --content-width-s: 21.25rem;
+    --content-width-m: 44rem;
+    --content-width-l: 67.5rem;
+    --content-width-xl: 92rem;
+    --page-width: min(100vw);
+    --page-padding-inline: .5rem;
+
+    --margin-inline-text: .5rem;
+
+    --card-width-m: 22rem;
+    --card-width-l: 33rem;
+    --card-width-xl: 45rem;
+
+    --plan-bg: linear-gradient(to top right, #000, #777);
+}

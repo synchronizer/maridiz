@@ -1,0 +1,6 @@
+.inset {
+    position: relative;
+    background-color: var(--grey-bg);
+    padding: 1.5rem;
+    /* border-radius: var(--bd-radius-M); */
+  }

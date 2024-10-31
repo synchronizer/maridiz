@@ -1,0 +1,52 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-inline: calc((100% - var(--page-width)) / 2);
+  padding-inline: calc((var(--page-width) - 100%) / 2);
+}
+
+
+.carousel__content {
+  margin-inline: calc((100% - var(--page-width)) / 2);
+  padding-inline: calc((var(--page-width) - 100%) / 2);
+  display: flex;
+  overflow-x: scroll;
+  gap: 1rem;
+}
+.carousel__content > * {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.carousel__content::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome browsers */
+}
+
+.carousel__content {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;  /* mozilla */
+}
+
+.carousel__left,
+.carousel__right {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.carousel__left {
+  left: 1.5rem;
+}
+
+.carousel__right {
+  right: 1.5rem;
+}
+  .carousel__left_hide,
+  .carousel__right_hide {
+    display: none;
+    pointer-events: none;
+  }
+
+  
+  

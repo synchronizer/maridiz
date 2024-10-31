@@ -1,0 +1,7 @@
+.wide {
+    margin-inline: max(
+        (100% - var(--content-width-l)) / 2,
+        (100% - var(--page-width)) / 2 + .5rem
+    );
+  }
+  

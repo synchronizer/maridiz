@@ -1,0 +1,32 @@
+
+.card {
+  background-color: var(--grey-bg);
+  padding-inline: 1rem;
+  padding-block: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card_center {
+  text-align: center;
+}
+
+.card_whitetext {
+  color: #fff;
+}
+
+.card_size_m {
+  width: var(--card-width-m);
+}
+
+.card_size_l {
+  width: var(--card-width-l);
+}
+
+.card_size_xl {
+  width: var(--card-width-xl);
+}

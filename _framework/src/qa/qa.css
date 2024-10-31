@@ -1,0 +1,33 @@
+.qa {
+    background: var(--grey-bg);
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+.qa__question::-webkit-details-marker,
+.qa__question::marker {
+ display: none; 
+ content: "";
+}
+
+.qa__question {
+    position: relative;
+    margin: -1.5rem;
+    padding: 1.5rem;
+    
+}
+.qa[open] .qa__question {
+    margin-bottom: 0;
+}
+.qa__question::before {
+    content: '▾';
+    position: absolute;
+    right: 1.5rem;
+}
+.qa[open] .qa__question::before {
+    rotate: 180deg;
+}
+
+.qa + .qa {
+    margin-top: 0.75rem;
+}

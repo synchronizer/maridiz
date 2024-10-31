@@ -1,0 +1,231 @@
+
+<Page title="Документация" map>
+    <Main>
+        <Gap></Gap>
+        <Supertitle>Документация</Supertitle>
+        <List sorted>
+            <List__item><Link href="#banner">Banner</Link></List__item>
+            <List__item><Link href="#button">Button</Link></List__item>
+            <List__item><Link href="#input">Input</Link></List__item>
+            <List__item><Link href="#select">Select</Link></List__item>
+            <List__item><Link href="#textarea">Textarea</Link></List__item>
+            <List__item><Link href="#image">Image</Link></List__item>
+            <List__item><Link href="#inset">Inset</Link></List__item>
+            <List__item><Link href="#carousel">Carousel, Gallery</Link></List__item>
+            <List__item><Link href="#clients-map">Clients-map</Link></List__item>
+            <List__item><Link href="#notifications">Notifications</Link></List__item>
+            <List__item><Link href="#call-request">Call-request</Link></List__item>
+            <List__item><Link href="#image-slider">Image-slider</Link></List__item>
+            <List__item><Link href="#modal">Modal</Link></List__item>
+        </List>
+        <Title dom-id="banner">Banner</Title>
+        <Wide>
+            <Example>
+                <Banner rounded title="Регистрация летних веранд" text="Эксперты по законному размещению летних веранд" background-image="linear-gradient(90deg, rgba(217, 237, 0, 0.20) 1.82%, rgba(151, 255, 4, 0.60) 99.9%), radial-gradient(100% 100% at 50% 0%, #D300CC 0%, #0D096C 100%)" content-width="l">
+                        <Button action>Заказать</Button>
+                </Banner>
+            </Example>
+        </Wide>
+        <Title dom-id="button">Button</Title>
+        <Example>
+            <Button>Button</Button>
+        </Example>
+        <Subtitle>Disbled</Subtitle>
+        <Example>
+            <Button disabled>Disabled</Button>
+        </Example>
+        <Subtitle>Ghost</Subtitle>
+        <Example>
+            <Button ghost>Ghost button</Button>
+        </Example>
+        <Subtitle>Action</Subtitle>
+        <Example>
+            <Button action>Action button</Button>
+        </Example>
+        <Subtitle>Href</Subtitle>
+        <Example>
+            <Button href="https://google.com">Google</Button>
+        </Example>
+        <Subtitle>Load</Subtitle>
+        <Example>
+            <Button load>Loding...</Button>
+        </Example>
+        <Subtitle>Small</Subtitle>
+        <Example>
+            <Button small>Small button</Button>
+            <Button small icon="/_resources/icons/test.svg"></Button>
+        </Example>
+        <Subtitle>Icon</Subtitle>
+        <Example>
+            <Button icon="/_resources/icons/test.svg">Button</Button>
+            <Button icon="/_resources/icons/test.svg"></Button>
+        </Example>
+        <Subtitle>Download</Subtitle>
+        <Example>
+            <Button download href="/_resources/price/price.pdf" icon="/_resources/icons/download.svg">Price</Button>
+        </Example>
+        <Subtitle>Fullwidth</Subtitle>
+        <Example>
+            <Button fullwidth>Fullwidth button</Button>
+        </Example>
+        <Subtitle>Abstract</Subtitle>
+        <Example>
+            <Button abstract><Image src="/_resources/img/logo.svg" alt="Maridiz logo" dom-id="maridiz-logo"></Image></Button>
+            <script>
+                document.querySelector('#maridiz-logo').addEventListener('click', () => alert('Maridiz'))
+            </script>
+        </Example>
+
+        <Subtitle>Style="dark"</Subtitle>
+        <Example>
+            <Button appearance="dark" >Dark button</Button>
+        </Example>
+
+        <Title dom-id="input">Input</Title>
+        <Example>
+            <Input label="Label" value="123"></Input>
+        </Example>
+
+        <Subtitle>Type</Subtitle>
+        <Example>
+            <Input label="Password" type="password"></Input>
+        </Example>
+
+
+
+        <Title dom-id="select">Select</Title>
+        <Example>
+            <Select label="Number">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </Select>
+        </Example>
+
+        <Title dom-id="textarea">Textarea</Title>
+        <Example>
+            <Textarea label="Text" rows="9"></Textarea>
+        </Example>
+
+
+        <Title dom-id="image">Image</Title>
+        <Wide>
+            <Example>
+                <Image src="/_resources/img/unsplash_Y9-VF4yyPXM-L-retina.png" rounded alt="Soup"></Image>
+            </Example>
+        </Wide>
+        <Example>
+            <Image src="/_resources/img/unsplash_CoWcJmbUCWw-M-retina.png" rounded alt="Architecture"></Image>
+        </Example>
+
+        <Title dom-id="inset">Inset</Title>
+        <Example>
+            <Inset>
+                <Text>
+                    Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Грамматики решила по всей меня знаках, подпоясал оксмокс, эта обеспечивает раз одна своего большой, ручеек буквенных все всеми дал страну взгляд предложения сбить. Рыбными толку lorem лучше диких языкового мир проектах силуэт, журчит заголовок переписали, великий до домах ты свой. Ведущими продолжил имени коварный строчка текста? Предупредила что большой всеми свое океана своего заманивший, на берегу маленькая курсивных имеет языкового страну, строчка пустился вершину о по всей вопроса алфавит оксмокс реторический последний взобравшись выйти скатился бросил! Своих лучше пустился мир текста сбить свое моей, приставка правилами на берегу толку встретил пунктуация однажды там до.
+                </Text>
+            </Inset>
+        </Example>
+
+
+        <Title dom-id="carousel">Carousel, Gallery</Title>
+            <Wide>
+                <Example fullwidth>
+                    <Carousel>
+                        <Gallery caption='Портфолио' alt="Портфолио" rounded src="/_resources/img/portfolio"></Gallery>
+                    </Carousel>
+                </Example>
+            </Wide>
+
+        <Title dom-id="clients-map">Clients-map</Title>
+        <Wide>
+            <Example>
+                <Clients-map></Clients-map>
+            </Example>
+        </Wide>
+
+        <Title dom-id="notifications">Notifications</Title>
+        <div style="display: flex; flex-direction: column; gap: .75rem;">
+            <Input label="text" dom-id="notification-text" value="Текст уведомления"></Input>
+        <Select label="Type" dom-id="notification-type">
+            <option value="success">Success</option>
+            <option value="attention">Attention</option>
+            <option value="error">Error</option>
+            <option value=false>Не указан</option>
+        </Select>
+        <Select label="Autoclose" dom-id="notification-autoclose">
+            <option value="true">true</option>
+            <option value="">false</option>
+        </Select>
+        <Button dom-id="notification-generate">Notify!</Button>
+        <script>
+            const notificationText = document.querySelector('#notification-text'),
+                  notificationType = document.querySelector('#notification-type'),
+                  notificationAutoclose = document.querySelector('#notification-autoclose'),
+                  notificationGenerate = document.querySelector('#notification-generate');
+              
+            notificationGenerate.addEventListener('click', () => {
+                window.pushNotification({
+                    text: notificationText.value,
+                    type: notificationType.value,
+                    autoclose: notificationAutoclose.value,
+                });
+            })
+        </script>
+        </div>
+        <Title dom-id="call-request">Call-request</Title>
+        <Example>
+            <Inset><Call-request></Call-request></Inset>
+        </Example>
+
+        <Title dom-id="image-slider">Image-slider</Title>
+        <Wide>
+            <Example>
+                <Image-slider src="/_resources/img/for-slider"></Image-slider>
+            </Example>
+        </Wide>
+
+        <Title>Plan</Title>
+        <Example>
+            <Plan name="Под ключ" price="от 94 000 ₽" time="≈ 60 дней" background="radial-gradient(23.25% 83.75% at 26.17% 3.05%, rgba(255, 76, 16, 0.20) 0%, rgba(253, 63, 0, 0.00) 100%), radial-gradient(54.43% 65.03% at 104.67% 105.57%, #387C90 0%, rgba(56, 125, 145, 0.00) 100%), radial-gradient(27.32% 56.37% at 100% 29.83%, rgba(45, 78, 88, 0.80) 0%, rgba(45, 78, 88, 0.00) 100%), radial-gradient(79% 50.56% at 5.5% 96.22%, #222627 0%, rgba(35, 40, 41, 0.00) 100%), linear-gradient(180deg, #6C8B93 0%, #314C54 96%)" color-scheme="dark">
+                <Plan__list>
+                    <Plan__list-item>Проект для включения в дислокацию или изменения внешнего
+                        облика</Plan__list-item>
+                    <Plan__list-item>Список документов необходимых для подачи на согласование</Plan__list-item>
+                    <Plan__list-item>Проверка документов, подача на согласование, получение
+                        решения</Plan__list-item>
+                    <Plan__list-item>Поэтапная оплата</Plan__list-item>
+                </Plan__list>
+                <Plan__controls>
+                    <Button whitelabel>Заказать</Button>
+                </Plan__controls>
+            </Plan>
+        </Example>
+
+
+
+        <Title dom-id="modal">Modal</Title>
+        <Example>
+            <Button dom-data-modal="test-modal">Test modal</Button>
+            <Modal id="test-modal">
+               <Call-request></Call-request>
+            </Modal>
+
+            <Button dom-data-modal="test-modal-2">Test modal 2</Button>
+            <Modal id="test-modal-2">
+                <Call-request></Call-request>
+                <Text>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus numquam animi rem quasi. Quam, nisi! Quas saepe sunt officia nemo optio molestias vitae magni minima explicabo, dolores voluptatum totam rerum obcaecati dolore accusantium, numquam harum, labore enim non ea at dicta natus porro. Ducimus labore repudiandae sint rerum aliquam, quae commodi nemo facilis, iusto cupiditate eius porro assumenda sed temporibus autem voluptatem ut dolore nobis? Ad dolorem magni distinctio quam expedita molestias, doloribus maiores consequatur cum quidem eaque natus dignissimos, voluptate excepturi nobis. Labore tempora ducimus est mollitia reprehenderit error magni eum totam delectus similique, aspernatur voluptatum quibusdam magnam reiciendis, unde esse ea sed cumque nostrum modi veritatis quod. Quo accusantium incidunt delectus debitis. Quas illum eveniet veritatis reiciendis voluptas soluta praesentium ipsa rerum quod exercitationem voluptatum rem, quae officia aliquam. At labore doloremque recusandae explicabo expedita dicta voluptatibus maiores nesciunt sed, cumque voluptatum nemo id, atque vero suscipit. Placeat.
+                </Text>
+                <Text>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nulla excepturi, ipsum quae laboriosam aperiam quisquam recusandae. Ipsa vitae quasi possimus repellendus, dolor suscipit unde enim dicta, totam hic at voluptate dolorum ut ratione! Recusandae deserunt rerum libero officia nobis quidem totam repellendus unde quod ut dicta sint facilis doloremque maiores laboriosam reiciendis, officiis distinctio? Perferendis totam commodi laudantium voluptatum corporis dolores mollitia culpa rerum cum, illum incidunt error officia eaque maiores asperiores alias recusandae itaque porro optio. Quaerat, necessitatibus dolorem quibusdam et voluptatem, libero error animi dolor aperiam vel vero, ullam impedit voluptates blanditiis doloribus corrupti. Consequuntur, autem nesciunt animi incidunt inventore ipsam ullam. Reiciendis illum nam modi harum quis hic! Explicabo, aliquam maiores debitis harum delectus voluptates veritatis corrupti odit. Molestias vel fugiat voluptatum atque eligendi qui eaque, accusantium praesentium. Reprehenderit nulla atque explicabo accusamus dicta nam eligendi doloribus excepturi iusto maiores. Animi quidem nobis labore, veniam omnis repellendus fugiat aliquam sed doloremque voluptate? Accusamus veritatis eaque optio atque ipsam molestiae odio ullam consequatur tempore nemo eum autem quidem quae culpa asperiores cumque quod voluptates, nulla, at deserunt incidunt repellat? Reprehenderit maiores eligendi magnam quis fugiat doloremque. Sit, quia accusamus deleniti voluptatibus cumque cum autem excepturi eius quidem.
+                </Text>
+            </Modal>
+        </Example>
+
+        
+    </Main>
+        <Footer></Footer>
+</Page>

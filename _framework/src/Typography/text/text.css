@@ -1,0 +1,21 @@
+.text {
+    text-wrap: pretty;
+    font-size: var(--font-size-text);
+    line-height: var(--line-height-text);
+    font-weight: var(--font-weight-text);
+    margin-block: calc(var(--line-height-text) * 1);
+    margin-inline: var(--margin-inline-text);
+}
+
+.subtitle + .text {
+    margin-block: calc(var(--line-height-text) * .5);
+}
+
+.text:first-child {
+    margin-top: 0;
+}
+
+.text:last-child {
+    margin-bottom: 0;
+}
+

@@ -1,0 +1,14 @@
+.row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.row>* {
+    flex: 1 0 1rem;
+}
+/* @media (max-width: 1050px) {
+    .row {
+        flex-direction: column;
+    }
+} */

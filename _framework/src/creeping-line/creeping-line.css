@@ -1,0 +1,28 @@
+.creeping-line {
+    color: #fff;
+    background: var(--black-bg);
+    font-size: 1rem;
+    line-height: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .creeping-line:hover .creeping-line__text {
+    animation-play-state: paused;
+  }
+  
+  .creeping-line__text {
+    animation: creeping-line 24s linear infinite;
+    display: inline-block;
+  }
+  
+  
+  
+  @keyframes creeping-line {
+    to {
+      translate: -100%;
+    }
+    from {
+      translate: var(--page-width);
+    }
+  }

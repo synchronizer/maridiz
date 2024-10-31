@@ -1,0 +1,15 @@
+.call-request {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.call-request__title {
+    font-size: var(--font-size-subtitle);
+    line-height: var(--line-height-subtitle);
+    font-weight: var(--font-weight-subtitle);
+}
+
+.call-request__send {
+    align-self: start;
+}

@@ -1,0 +1,39 @@
+.list {
+  font-size: var(--font-size-text);
+  line-height: var(--line-height-text);
+  font-weight: var(--font-weight-text);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+ul.list {
+  list-style-type: "—";
+}
+
+ul.list_no-marker,
+ol.list_no-marker {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list_no-marker .list__item {
+  padding-left: 0;
+}
+
+.list__item {
+  margin-top: 0.8em;
+  padding-left: .5em;
+}
+
+.list__item::marker {
+  font-weight: 600;
+}
+
+.list:first-child {
+  margin-top: 0;
+}
+
+.list:last-child {
+  margin-bottom: 0;
+}

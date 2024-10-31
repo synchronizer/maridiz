@@ -1,0 +1,13 @@
+.section {
+    margin-inline: calc((100% - var(--page-width)) / 2);
+    padding-inline: calc((var(--page-width) - 100%) / 2);
+    padding-block: 4.5rem;
+    margin-block: 3rem;
+    background: var(--grey-bg);
+}
+
+.section + .section {
+    margin-top: 0;
+}
+
+

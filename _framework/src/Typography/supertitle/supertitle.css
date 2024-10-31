@@ -1,0 +1,26 @@
+.supertitle {
+    margin-top: 1.6em;
+    margin-bottom: var(--line-height-text);
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-supertitle);
+    line-height: var(--line-height-supertitle);
+    font-weight: var(--font-weight-supertitle);
+    text-wrap: balance;
+
+    /* display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem; */
+    margin-inline: var(--margin-inline-text);
+}
+
+.supertitle:first-child {
+    margin-top: 0;
+}
+
+.supertitle:last-child {
+    margin-bottom: 0;
+}
+
+.supertitle_center {
+    text-align: center;
+}

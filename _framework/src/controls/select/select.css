@@ -1,0 +1,36 @@
+
+.select {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .select__label {
+    position: absolute;
+    left: 1em;
+    top: -1.5em;
+    font: var(--font-caption);
+    color: var(--grey-text);
+  }
+  
+  .select__select {
+    width: 100%;
+    padding-right: var(--control-size-M);
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path d='M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z' fill='black'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right .75rem top .75rem;
+    text-align: left;
+  }
+
+  .select:has(.select__select[disabled]) {
+    opacity: 0.5;
+  }
+  
+  @media (max-width: 720px) {
+    .select {
+      width: 100%;
+    }
+  }

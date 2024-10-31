@@ -1,0 +1,27 @@
+.title {
+    margin-top: 2em;
+    margin-bottom: var(--line-height-text);
+    text-wrap: balance;
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
+    font-weight: var(--font-weight-title);
+
+    /* display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem; */
+
+    margin-inline: var(--margin-inline-text);
+}
+
+.title:first-child {
+    margin-top: 0;
+}
+
+.title:last-child {
+    margin-bottom: 0;
+}
+
+.title_center {
+    text-align: center;
+}

@@ -1,0 +1,286 @@
+.rounded-s {
+    border-radius: var(--bd-radius-S);
+}
+.rounded-top-s {
+    border-top-left-radius: var(--bd-radius-S);
+    border-top-right-radius: var(--bd-radius-S);
+}
+.rounded-right-s {
+    border-top-right-radius: var(--bd-radius-S);
+    border-bottom-right-radius: var(--bd-radius-S);
+}
+.rounded-bottom-s {
+    border-bottom-left-radius: var(--bd-radius-S);
+    border-bottom-right-radius: var(--bd-radius-S);
+}
+.rounded-left-s {
+    border-bottom-left-radius: var(--bd-radius-S);
+    border-top-left-radius: var(--bd-radius-S);
+}
+.rounded-top-left-s {
+    border-top-left-radius: var(--bd-radius-S);
+}
+.rounded-top-right-s {
+    border-top-right-radius: var(--bd-radius-S);
+}
+.rounded-bottom-right-s {
+    border-bottom-right-radius: var(--bd-radius-S);
+}
+.rounded-bottom-left-s {
+    border-bottom-left-radius: var(--bd-radius-S);
+}
+
+.rounded-m {
+    border-radius: var(--bd-radius-M);
+}
+.rounded-top-m {
+    border-top-left-radius: var(--bd-radius-M);
+    border-top-right-radius: var(--bd-radius-M);
+}
+.rounded-right-m {
+    border-top-right-radius: var(--bd-radius-M);
+    border-bottom-right-radius: var(--bd-radius-M);
+}
+.rounded-bottom-m {
+    border-bottom-left-radius: var(--bd-radius-M);
+    border-bottom-right-radius: var(--bd-radius-M);
+}
+.rounded-left-m {
+    border-bottom-left-radius: var(--bd-radius-M);
+    border-top-left-radius: var(--bd-radius-M);
+}
+.rounded-top-left-m {
+    border-top-left-radius: var(--bd-radius-M);
+}
+.rounded-top-right-m {
+    border-top-right-radius: var(--bd-radius-M);
+}
+.rounded-bottom-right-m {
+    border-bottom-right-radius: var(--bd-radius-M);
+}
+.rounded-bottom-left-m {
+    border-bottom-left-radius: var(--bd-radius-M);
+}
+
+.rounded-l {
+    border-radius: var(--bd-radius-L);
+}
+.rounded-top-l {
+    border-top-left-radius: var(--bd-radius-L);
+    border-top-right-radius: var(--bd-radius-L);
+}
+.rounded-right-l {
+    border-top-right-radius: var(--bd-radius-L);
+    border-bottom-right-radius: var(--bd-radius-L);
+}
+.rounded-bottom-l {
+    border-bottom-left-radius: var(--bd-radius-L);
+    border-bottom-right-radius: var(--bd-radius-L);
+}
+.rounded-left-l {
+    border-bottom-left-radius: var(--bd-radius-L);
+    border-top-left-radius: var(--bd-radius-L);
+}
+.rounded-top-left-l {
+    border-top-left-radius: var(--bd-radius-L);
+}
+.rounded-top-right-l {
+    border-top-right-radius: var(--bd-radius-L);
+}
+.rounded-bottom-right-l {
+    border-bottom-right-radius: var(--bd-radius-L);
+}
+.rounded-bottom-left-l {
+    border-bottom-left-radius: var(--bd-radius-L);
+}
+
+/* [class*="rounded-"] {
+    --corner-mask-size: calc(var(--border-radius) * 2);
+    mask:
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1" preserveAspectRatio="none" xml:space="preserve"> <rect x="0" y="0" width="1" height="1"/></svg>')
+        calc(var(--corner-top-left-mask-size) - 1px) top / calc(100% - var(--corner-top-left-mask-size) - var(--corner-top-right-mask-size) + 2px) max(100% - var(--corner-bottom-left-mask-size) + 1px, 100% - var(--corner-bottom-right-mask-size) + 1px) no-repeat,
+    
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1" preserveAspectRatio="none" xml:space="preserve"> <rect x="0" y="0" width="1" height="1"/></svg>')
+      calc(var(--corner-top-left-mask-size) - 1px) bottom / calc(100% - var(--corner-top-left-mask-size) - var(--corner-top-right-mask-size) + 2px) max(100% - var(--corner-top-left-mask-size) + 1px, 100% - var(--corner-top-left-mask-size) + 1px) no-repeat,
+
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1" preserveAspectRatio="none" xml:space="preserve"> <rect x="0" y="0" width="1" height="1"/></svg>')
+        left calc(50% - 1px) / 100% calc(100% - var(--corner-mask-size) * 2 + 2px) no-repeat,
+
+      url('data:image/svg+xml;utf8,<svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"  ><path d="M0 1C0 0.1 0.1 0 1 0V1H0Z"/></svg>')
+        top left / var(--corner-top-left-mask-size) var(--corner-top-left-mask-size) no-repeat,
+      url('data:image/svg+xml;utf8,<svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"  ><path d="M1 1C1 0.1 0.9 0 0 0V1H1Z"/></svg>')
+        top right / var(--corner-top-right-mask-size) var(--corner-top-right-mask-size) no-repeat,
+      url('data:image/svg+xml;utf8,<svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"  ><path d="M1 0C1 0.9 0.9 1 0 1V0H1Z"/></svg>')
+        bottom right /  var(--corner-bottom-right-mask-size) var(--corner-bottom-right-mask-size) no-repeat,
+      url('data:image/svg+xml;utf8,<svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"  ><path d="M0 0C0 0.9 0.1 1 1 1V0H0Z"/></svg>')
+        bottom left /  var(--corner-bottom-left-mask-size) var(--corner-bottom-left-mask-size) no-repeat; 
+    position: relative;
+}
+
+* {
+    --corner-top-left-mask-size: 0px;
+    --corner-top-right-mask-size: 0px;
+    --corner-bottom-right-mask-size: 0px;
+    --corner-bottom-left-mask-size: 0px;
+}
+
+.rounded-s {
+    --border-radius: var(--bd-radius-S);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-top-s {
+    --border-radius: var(--bd-radius-S);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-right-s {
+    --border-radius: var(--bd-radius-S);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-bottom-s {
+    --border-radius: var(--bd-radius-S);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-left-s {
+    --border-radius: var(--bd-radius-S);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-top-left-s {
+    --border-radius: var(--bd-radius-S);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-top-right-s {
+    --border-radius: var(--bd-radius-S);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-bottom-right-s {
+    --border-radius: var(--bd-radius-S);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-bottom-left-s {
+    --border-radius: var(--bd-radius-S);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+
+
+.rounded-m {
+    --border-radius: var(--bd-radius-M);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-top-m {
+    --border-radius: var(--bd-radius-M);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-right-m {
+    --border-radius: var(--bd-radius-M);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-bottom-m {
+    --border-radius: var(--bd-radius-M);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-left-m {
+    --border-radius: var(--bd-radius-M);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-top-left-m {
+    --border-radius: var(--bd-radius-M);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-top-right-m {
+    --border-radius: var(--bd-radius-M);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-bottom-right-m {
+    --border-radius: var(--bd-radius-M);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-bottom-left-m {
+    --border-radius: var(--bd-radius-M);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+
+
+
+.rounded-l {
+    --border-radius: var(--bd-radius-L);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-top-l {
+    --border-radius: var(--bd-radius-L);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-right-l {
+    --border-radius: var(--bd-radius-L);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-bottom-l {
+    --border-radius: var(--bd-radius-L);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-left-l {
+    --border-radius: var(--bd-radius-L);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-top-left-l {
+    --border-radius: var(--bd-radius-L);
+    --corner-top-left-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-top-right-l {
+    --border-radius: var(--bd-radius-L);
+    --corner-top-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-bottom-right-l {
+    --border-radius: var(--bd-radius-L);
+    --corner-bottom-right-mask-size: calc(var(--border-radius) * 2);
+}
+
+.rounded-bottom-left-l {
+    --border-radius: var(--bd-radius-L);
+    --corner-bottom-left-mask-size: calc(var(--border-radius) * 2);
+} */

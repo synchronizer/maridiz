@@ -1,0 +1,186 @@
+.button,
+.button:any-link,
+a.button {
+  text-decoration: none;
+  appearance: none;
+  border: none;
+  color: currentColor;
+}
+
+.button_whitelabel {
+  color: #fff;
+}
+
+.button {
+  --_button-size: var(--control-size-M);
+  --_icon-size: 1.5rem;
+  --_padding-inline: .75rem;
+  height: var(--_button-size);
+  min-width: var(--_button-size);
+  padding-inline: var(--_padding-inline);
+  gap: calc(var(--_button-size) / 2 - var(--_icon-size) / 2);
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-button);
+  background-color: var(--button-bg);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button[data-counter]:not(.button[data-counter="0"]) {
+  position: relative;
+}
+
+.button[data-counter]:not(.button[data-counter="0"])::after {
+  --__size: 1.25rem;
+  font-size: .8rem;
+  content: attr(data-counter);
+  position: absolute;
+  width: var(--__size);
+  height: var(--__size);
+  padding-top: .1rem;
+  right: -0rem;
+  bottom: -0rem;
+  border-radius: var(--__size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f02;
+  font-weight: 600;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.button_appearance_dark {
+  background: var(--button_appearance_dark-bg);
+  color: #fff;
+}
+
+.button_appearance_dark:hover {
+  filter: brightness(1.5);
+}
+
+
+.button_size_m {
+  --_button-size: var(--control-size-M);
+  --_icon-size: 1.5rem;
+  --_padding-inline: .75rem;
+}
+
+.button_size_l {
+  --_button-size: var(--control-size-L);
+  --_icon-size: 1.5rem;
+  --_padding-inline: .75rem;
+}
+
+.button_small,
+.button_size_s {
+  --_button-size: var(--control-size-S);
+  --_icon-size: 1.25rem;
+  --_padding-inline: .5rem;
+
+}
+
+.button_extrasmall {
+  --_button-size: var(--control-size-XS);
+  font-size: var(--font-size-caption);
+}
+
+.button_fullwidth {
+  display: flex;
+  width: 100%;
+}
+
+.button:hover:not(.button_ghost):not(.button_action),
+.button:hover:not(.button_ghost):not(.button_appearance_action) {
+  filter: brightness(1.12) saturate(0.88);
+}
+
+.button_action:hover,
+.button_appearance_action:hover {
+  filter: brightness(.9) saturate(1.2);
+}
+
+.button:active,
+.button_pressed {
+  transform: scale(.97);
+}
+
+.button_ghost:not(:hover):not(:focus-visible),
+.button_ghost[disabled] {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.button_with-icon::before {
+  content: '';
+  display: block;
+  width: var(--_icon-size);
+  height: var(--_icon-size);
+  background-color: currentColor;
+  mask-image: var(--icon);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  margin-inline: calc(var(--_button-size) / 2 - var(--_icon-size) / 2 - var(--_padding-inline));
+}
+
+/* .button__icon {
+  width: var(--_icon-size);
+  height: var(--_icon-size);
+  background-color: currentColor;
+  mask-image: var(--icon);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  margin-inline: calc(var(--_button-size) / 2 - var(--_icon-size) / 2 - var(--_padding-inline));
+} */
+
+.button[disabled] {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.button_action,
+.button_appearance_action {
+  background: var(--attractive-bg);
+  color: #000;
+}
+
+.button_black {
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+}
+
+.button_load {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 8 8' fill='none'><path d='M0 0H4L0 4V0Z' fill='black' fill-opacity='0.15'/><path d='M0 8L8 0V4L4 8H0Z' fill='black' fill-opacity='0.15'/></svg>");
+  animation: linear .5s infinite buttonLoad;
+  pointer-events: none;
+}
+
+.button_abstract {
+  padding: 0;
+  height: max-content;
+  background: none;
+
+}
+
+@keyframes buttonLoad {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 1rem 0;
+  }
+}

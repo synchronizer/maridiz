@@ -1,0 +1,19 @@
+.check-button {
+    position: relative;
+    isolation: isolate;
+}
+
+.check-button__check {
+    --__inset: .15rem;
+    position: absolute;
+    inset: var(--__inset);
+    background: var(--button-bg);
+    pointer-events: none;
+    border-radius: calc(var(--bd-radius-S) - var(--__inset));
+}
+
+.check-button:not(.check-button_checked) .check-button__check {
+    display: none;
+}
+
+
