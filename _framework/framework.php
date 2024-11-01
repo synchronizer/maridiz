@@ -1,5 +1,14 @@
 
 <?php 
+// foreach(glob("$_SERVER[DOCUMENT_ROOT]/../*") as $var)
+// {
+//     echo $var;
+//     echo "<br>";
+// }
+
+// foreach($_SERVER as $key => $value) {
+//     echo "<b>$key:</b> $value<br>";
+// }
 
 function create_block($block_name, $block_function) {
     global $blocksArray;

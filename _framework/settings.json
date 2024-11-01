@@ -1,5 +1,5 @@
 {
     "src": "/_framework/src",
-    "build": "/docs",
-    "public_url": "https://synchronizer.github.io/maridiz"
+    "build": "/../maridiz-public",
+    "public_url": "https://synchronizer.github.io/maridiz-public"
 }
